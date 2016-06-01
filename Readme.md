@@ -5,7 +5,7 @@ OpenSALICON is an open source implementation of the SALICON saliency model cited
 
 ### Citing OpenSALICON
 
-If you find OpenSALICON useful in your research, please cite:
+A technical report describing our implementation is provided (salicon.pdf). If you find OpenSALICON useful in your research, please cite our technical report:
 ````
 @TECHREPORT {christopherleethomas2016,
     author      = {Christopher Lee Thomas},
