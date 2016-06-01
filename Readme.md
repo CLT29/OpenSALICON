@@ -40,8 +40,9 @@ If you find OpenSALICON useful in your research, please cite:
     caffe.set_device(1)
     ````
     If you do not have a CPU, be sure to remove the ````set_device(1) ```` line and change the mode selection to ```` caffe.set_mode_cpu() ````. Depending on your setup, you may need to change the device ID from 1 to 0 or some other number depending on your hardware configuration.
-2. The following commands should allow you to compute the saliency map for an image using the pretrained model. **IMPORTANT:** When using on your own data, ensure that your data is in 256 RGB format. If it is not, you will need to manually do some pre-processing first.
-3. Run python and execute the following commands:
+2. Download the caffemodel files using **[this link](http://www.cs.pitt.edu/~chris/files/2016/model_files.tgz)**
+3. The following commands should allow you to compute the saliency map for an image using the pretrained model. **IMPORTANT:** When using on your own data, ensure that your data is in 256 RGB format. If it is not, you will need to manually do some pre-processing first.
+4. Run python and execute the following commands:
     ````python
     from Salicon import Salicon
     sal = Salicon()
@@ -50,7 +51,7 @@ If you find OpenSALICON useful in your research, please cite:
     ````
     ![Original Image](/face.jpg "Original Image")
     ![Resulting Map](/face_map.jpg "Resulting Map")
-4. You can then perform thresholding (if you prefer) on the output or use it directly.
+5. You can then perform thresholding (if you prefer) on the output or use it directly.
 
 ##### Training your own model
 
