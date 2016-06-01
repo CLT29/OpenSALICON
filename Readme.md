@@ -31,10 +31,12 @@ A technical report describing our implementation is provided (salicon.pdf). If y
 
 ##### Basic Demo (producing saliency maps from images)
 1. Edit the `Salicon.py` file to include the path to your caffe python install where indicated (i.e. update the line below to the path containing your caffe installation):
+
     ````python
         sys.path.insert(0, 'caffe/install/python') # PATH TO CAFFE PYTHON INSTALL
     ````
     Additionally, depending on whether you are using a GPU or not, you may need to edit the following two lines:
+	
     ````python
     caffe.set_mode_gpu()
     caffe.set_device(1)
@@ -43,6 +45,7 @@ A technical report describing our implementation is provided (salicon.pdf). If y
 2. Download the caffemodel files using **[this link.](http://www.cs.pitt.edu/~chris/files/2016/model_files.tgz)** Place the caffemodel files into the same directory as the code (unless you manually modify the paths to point to the directory containing the caffemodel files).
 3. The following commands should allow you to compute the saliency map for an image using the pretrained model. **IMPORTANT:** When using on your own data, ensure that your data is in 256 RGB format. If it is not, you will need to manually do some pre-processing first.
 4. Run python and execute the following commands:
+
     ````python
     from Salicon import Salicon
     sal = Salicon()
