@@ -53,7 +53,7 @@ A technical report describing our implementation is provided (salicon.pdf). If y
     # map contains saliency map in double format.
     ````
     ![Original Image](/face.jpg "Original Image")
-    ![Resulting Map](/face_map.jpg "Resulting Map")
+    ![Resulting Map](/face_out.jpg "Resulting Map")
 5. You can then perform thresholding (if you prefer) on the output or use it directly.
 
 ##### Training your own model
