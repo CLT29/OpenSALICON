@@ -40,7 +40,7 @@ class Salicon:
         self.net.blobs['fine_scale'].data[...] = fine_img
         self.net.blobs['coarse_scale'].data[...] = coarse_img
         self.net.forward()
-        sal_map = self.net.blobs['saliency_map'].data
+        sal_map = self.net.blobs['saliency_map_out'].data
         sal_map = sal_map[0,0,:,:]
         sal_map = sal_map - np.amin(sal_map)
         sal_map = sal_map / np.amax(sal_map)    

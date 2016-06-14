@@ -603,3 +603,9 @@ layer {
     kernel_size: 1
   }
 }
+layer {
+  name: "saliency_map_out"
+  type: "Sigmoid"
+  bottom: "saliency_map"
+  top: "saliency_map_out"
+}
